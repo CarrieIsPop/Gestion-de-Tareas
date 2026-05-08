@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  padding: 40px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.formulario {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.formulario input,
+.formulario select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.formulario input {
+  flex: 1;
+}
+
+.formulario button {
+  padding: 10px 15px;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.formulario button:hover {
+  background: #0056b3;
+}
+
+.filtros {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filtros button {
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #ddd;
+}
+
+.tarea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.completada .texto {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.prioridad {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.alta {
+  color: red;
+}
+
+.media {
+  color: orange;
+}
+
+.baja {
+  color: green;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+}
+
+.botones button {
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+}
+
+.completar {
+  background: green;
+}
+
+.eliminar {
+  background: crimson;
+}
