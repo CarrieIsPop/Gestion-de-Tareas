@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestión de Tareas</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="components/darkmode.css">
+  <link rel="stylesheet" href="components/responsive.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>📋 Gestión de Tareas</h1>
+
+      <div class="top-actions">
+        <input type="text" id="searchInput" placeholder="Buscar tarea...">
+
+        <button id="themeBtn">🌙</button>
+      </div>
+    </header>
+
+    <section class="task-form">
+
+      <input type="text" id="taskInput" placeholder="Escribe una tarea">
+
+      <select id="priority">
+        <option value="Alta">Alta</option>
+        <option value="Media">Media</option>
+        <option value="Baja">Baja</option>
+      </select>
+
+      <button id="addTaskBtn">Agregar</button>
+
+    </section>
+
+    <section class="filters">
+
+      <button class="filter-btn active" data-filter="all">Todas</button>
+
+      <button class="filter-btn" data-filter="pending">Pendientes</button>
+
+      <button class="filter-btn" data-filter="completed">Completadas</button>
+
+    </section>
+
+    <section class="dashboard">
+
+  <div class="card">
+    <h3>Total de Tareas</h3>
+
+    <canvas id="totalChart"></canvas>
+
+    <p id="totalTasks">0</p>
+  </div>
+
+  <div class="card">
+    <h3>Progreso</h3>
+
+    <canvas id="progressChart"></canvas>
+
+    <p id="progress">0%</p>
+  </div>
+
+  <div class="card">
+    <h3>Tareas Urgentes</h3>
+
+    <canvas id="urgentChart"></canvas>
+
+    <p id="urgentTasks">0</p>
+  </div>
+
+</section>
+
+    </section>
+
+      <div class="card">
+        <h3>Total</h3>
+        <p id="totalTasks">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Progreso</h3>
+        <p id="progress">0%</p>
+      </div>
+
+      <div class="card">
+        <h3>Urgentes</h3>
+        <p id="urgentTasks">0</p>
+      </div>
+
+    </section>
+
+    <section>
+
+      <ul id="taskList"></ul>
+
+    </section>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
