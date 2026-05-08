@@ -138,3 +138,15 @@ canvas{
   max-width:200px;
   margin:auto;
 }
+
+canvas{
+  width:100% !important;
+  max-width:220px;
+  margin:auto;
+}
+
+.card p{
+  margin-top:10px;
+  font-size:20px;
+  font-weight:bold;
+}
