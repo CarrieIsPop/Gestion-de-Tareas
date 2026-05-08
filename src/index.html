@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestión de Tareas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>📋 Gestión de Tareas</h1>
+
+    <div class="formulario">
+      <input
+        type="text"
+        id="inputTarea"
+        placeholder="Escribe una tarea..."
+      />
+
+      <select id="prioridad">
+        <option value="Alta">Alta</option>
+        <option value="Media">Media</option>
+        <option value="Baja">Baja</option>
+      </select>
+
+      <button id="btnAgregar">Agregar</button>
+    </div>
+
+    <div class="filtros">
+      <button data-filtro="todas">Todas</button>
+      <button data-filtro="pendientes">Pendientes</button>
+      <button data-filtro="completadas">Completadas</button>
+    </div>
+
+    <ul id="listaTareas"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
