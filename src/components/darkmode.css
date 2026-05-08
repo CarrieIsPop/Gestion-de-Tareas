@@ -1,0 +1,16 @@
+.dark-mode{
+  background:#111827;
+  color:white;
+}
+
+.dark-mode .card,
+.dark-mode .task{
+  background:#1f2937;
+  color:white;
+}
+
+.dark-mode input,
+.dark-mode select{
+  background:#374151;
+  color:white;
+}
